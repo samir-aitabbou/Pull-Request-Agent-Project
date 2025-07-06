@@ -1,0 +1,1 @@
+# Python packages including FastMCP, FastAPI, and huggingface-hub

@@ -1,3 +1,24 @@
-Purpose : Project Configuration	
-Description : Modern Python packaging with uv dependency management
+[project]
+name = "mcp-course-unit3-example"
+version = "0.1.0"
+description = "FastAPI and Gradio app for Hugging Face Hub discussion webhooks"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.24.0",
+    "gradio>=4.0.0",
+    "huggingface-hub[mcp]>=0.32.0",
+    "pydantic>=2.0.0",
+    "python-multipart>=0.0.6",
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+    "fastmcp>=2.0.0",
+]
 
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]

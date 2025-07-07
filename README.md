@@ -81,7 +81,7 @@ The webhook is validated for security using shared secrets. Tag detection suppor
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/pr-agent-huggingface.git
+git https://github.com/samir-aitabbou/Pull-Request-Agent-Project.git
 cd pr-agent-huggingface
 ```
 
